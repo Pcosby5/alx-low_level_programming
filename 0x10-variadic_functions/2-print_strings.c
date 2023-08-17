@@ -1,10 +1,9 @@
 #include "variadic_functions.h"
 #include <stdio.h>
-#include <string.h>
 
 /**
  * print_strings - prints variadic arguments
- * @separator: char to separate integers
+ * @separator: char to separate string
  * @n: const varaidic count/integer
  * Return: void
  */
