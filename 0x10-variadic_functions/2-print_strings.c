@@ -29,7 +29,6 @@ for (p = 0; p < n; p++)
 		printf("%s", separator);
 	}
 }
-	printf("\n");
-
 	va_end(argc);
+	printf("\n");
 }
