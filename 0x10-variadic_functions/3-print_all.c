@@ -24,7 +24,7 @@ void print_all(const char * const format, ...)
 			start = 1;
 			printf("%c", va_arg(args, int));
 			break;
-		case 'i':
+			case 'i':
 			switch (start)
 			{ case 1: printf(", "); }
 			start = 1;
