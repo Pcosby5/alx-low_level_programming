@@ -2,6 +2,30 @@
 #include <stdio.h>
 
 /**
+ * _strlen - returns the length of string
+ * @str: string who is about to be checked
+ * Return: length of string
+ */
+
+
+
+int _strlen(char *str)
+{
+	int j = 0;
+
+	if (str == NULL)
+	{
+		return (0);
+
+	}
+	while (str++)
+		j++;
+	return (j);
+}
+
+
+
+/**
  * print_list - prints all element of a list
  * @h: pointer to head of the list
  * Return: number of nodes
