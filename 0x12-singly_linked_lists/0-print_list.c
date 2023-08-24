@@ -1,13 +1,13 @@
 #include "lists.h"
 #include <stdio.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  * _strlen - returns the length of string
  * @str: string who is about to be checked
  * Return: length of string
  */
-
-
 
 int _strlen(char *str)
 {
@@ -16,14 +16,13 @@ int _strlen(char *str)
 	if (str == NULL)
 	{
 		return (0);
-
 	}
 	while (str++)
+	{
 		j++;
+	}
 	return (j);
 }
-
-
 
 /**
  * print_list - prints all element of a list
@@ -48,7 +47,6 @@ size_t print_list(const list_t *h)
 		p++;
 
 		h = h->next;
-
 	}
 	return (p);
 }
