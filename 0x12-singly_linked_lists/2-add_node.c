@@ -12,7 +12,7 @@
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *temp;
-	unsigned len = 0;
+	unsigned int len = 0;
 
 	/*if (head != NULL && str != NULL)*/
 	while (str[len])
@@ -31,23 +31,3 @@ list_t *add_node(list_t **head, const char *str)
 	return (temp);
 }
 
-/**
- * _strlen - returns the length of string
- * @str: string who is about to be checked
- * Return: length of string
- */
-
-/*int _strlen(char *str)
-{
-	int j = 0;
-
-	if (str == NULL)
-	{
-		return (0);
-	}
-	while (str++)
-	{
-		j++;
-	}
-	return (j);
-}*/
