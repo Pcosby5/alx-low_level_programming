@@ -9,15 +9,15 @@
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-	unsigned int num_of_nodes = 0;  /* Initialize a count for nodes */
-	dlistint_t *temp = head;  /* Initialize a temporary node */
+	unsigned int num_of_nodes = 0; /* Initialize a count for nodes */
+	dlistint_t *temp = head;	   /* Initialize a temporary node */
 
-	while (temp != NULL)
+	while (temp)
 	{
-		if (num_of_nodes == index)  /* Chek if curr node idx matches desired index */
-			return (temp);  /* Return the current node when the index matches */
-		temp = temp->next;  /* Move to the next node */
-		num_of_nodes++;  /* Increment the count for nodes */
+		if (num_of_nodes == index) /* Chek if curr node idx matches desired index */
+			return (temp);		   /* Return the current node when the index matches */
+		temp = temp->next;		   /* Move to the next node */
+		num_of_nodes++;			   /* Increment the count for nodes */
 	}
-	return (NULL);  /* Return NULL if the desired node does not exist */
+	return (NULL); /* Return NULL if the desired node does not exist */
 }
